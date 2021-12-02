@@ -41,6 +41,7 @@ ul {
 
 .imgcontainer {
     position: relative;
+    cursor: pointer;
 }
 
 .imgcyan {
@@ -87,6 +88,7 @@ ul {
     font-size: 1.25rem; 
     color: var(--white);
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .content__title--heading:hover {
@@ -148,6 +150,7 @@ ul {
 .content__jules--text--heading {
     color: var(--white);
     font-weight: 700;
+    cursor: pointer;
 }
 .content__jules--text--heading:hover {
     color: cyan;
