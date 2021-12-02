@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --veryDarkBlue: hsl(217, 54%, 11%);
+  --veryDarkBlueSecond: hsl(216, 50%, 16%);
+  --veryDarkBlueThird: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --whiteText: hsl(0, 0%, 51%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif; 
+  font-size: 18px;
+  background-color: var(--veryDarkBlue);
+  color: hsl(0, 0%, 100%);
+    padding: 1.25rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.content {
+    padding: 1.25rem;
+    background-color: var(--veryDarkBlueSecond);
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imgcontainer {
+    position: relative;
+}
+
+.imgcyan {
+    position: absolute;
+    background-color: cyan;
+    height: 95%;
+    width: 100%;
+    transform: translateY(-26.75rem);
+    border-radius: 10px;
+    z-index: 99;
+    opacity: 0;
+}
+
+.eye {
+    position: absolute;
+    top: 48%;
+    left: 45%;
+}
+
+.imgcyan:hover {
+   opacity: .75;
+   transition: all 1s;
+}
+
+
+
+
+.content__equilibrium {
+    position: relative;
+    border-radius: 10px;
+   margin-bottom: 1rem;
+  
+}
+
+
+
+
+.content__title{
+    
+   margin-bottom: 1rem;
+}
+
+.content__title--heading {
+    font-size: 1.25rem; 
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.content__title--heading:hover {
+    color: aqua;
+    transition: all 1s;
+}
+
+.content__title--text {
+    font-size: 1.25rem; 
+    color: var(--whiteText);
+    font-weight: 300;
+    
+}
+
+.content__price {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid gray;margin-bottom: .5rem;
+   
+}
+
+.content__price--eth {
+    color: cyan;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.content__price--time {
+    color: var(--veryDarkBlueThird);
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.content__jules {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.content__jules--pic {
+    width: 4rem;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+}
+
+.content__jules--text {
+    color: var(--whiteText);
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-left: 4rem;
+}
+
+.content__jules--text--heading {
+    color: var(--white);
+    font-weight: 700;
+}
+.content__jules--text--heading:hover {
+    color: cyan;
+    transition: all 1s;
+}
+
+
+
+
+
+@media (min-width: 500px) {
+    .content {
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
+}
